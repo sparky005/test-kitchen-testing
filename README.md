@@ -5,7 +5,7 @@
 Setup:  
 Install vagrant, virtualbox (however you want)  
 ```
-gem install test-kitchen kitchen-ansible kitchen-sync
+gem install test-kitchen kitchen-ansible kitchen-sync kitchen-vagrant
 git clone https://github.com/sparky005/test-kitchen-testing.git
 kitchen test
 ```

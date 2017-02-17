@@ -9,5 +9,5 @@ gem install test-kitchen kitchen-ansible kitchen-sync kitchen-vagrant
 git clone https://github.com/sparky005/test-kitchen-testing.git
 kitchen test
 ```
-You should see a whole bunch of setup stuff happen, the playbook run, and then the (single) test run  
+You should see a whole bunch of setup stuff happen, the playbook run, and then the test run. This process will happen *twice*, once for each test suite, with the colors changing to reflect the test suite.
 That's it!

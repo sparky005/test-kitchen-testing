@@ -1,0 +1,11 @@
+---
+
+- hosts: all
+  become: true
+  tasks:
+      - name: update apt-cache
+        apt: update_cache=yes
+      - name: Dist Upgrade 
+        apt: upgrade=dist autoremove=yes
+      - name: install python pip
+        apt: name=python-pip state=latest

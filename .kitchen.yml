@@ -15,7 +15,8 @@ platforms:
   - name: ubuntu-14.04
 
 suites:
-  - name: default
+#  - name: default
+  - name: apache_server
 
 verifier:
   ruby_bindir: '/usr/bin'

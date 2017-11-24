@@ -3,5 +3,5 @@
   vars:
     doc_root: /var/www/example
   roles:
-    - linux_common
+    - apache_server
 

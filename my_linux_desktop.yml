@@ -1,0 +1,17 @@
+- hosts: all
+  become: true
+
+  roles:
+    - linux_common
+
+  tasks:
+
+    - name: install zsh
+      apt: name=zsh state=latest
+
+    - user:
+        name: asadik
+        comment: "Adil Sadik"
+        state: present
+        shell: /bin/zsh
+        groups: sudo

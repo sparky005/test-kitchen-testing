@@ -19,6 +19,9 @@ platforms:
 suites:
   - name: linux_common
   - name: apache_server
+  - name: my_linux_desktop
+    provisioner:
+      playbook: my_linux_desktop.yml
     #    provisioner:
     #      name: ansible_playbook
     #      playbook: main.yml

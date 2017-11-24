@@ -10,8 +10,8 @@ provisioner:
   hosts: all
   name: ansible_playbook
   roles_path: roles
-  require_chef_for_busser: false
-  require_ruby_for_busser: true
+  #require_chef_for_busser: false
+  #require_ruby_for_busser: true
 
 platforms:
   - name: ubuntu-16.04
@@ -25,4 +25,4 @@ suites:
 
 verifier:
     #  name: "kitchen-verifier-serverspec"
-  ruby_bindir: '/usr/bin'
+    #ruby_bindir: '/usr/bin'

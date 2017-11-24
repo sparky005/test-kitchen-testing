@@ -1,6 +1,7 @@
 ---
 driver:
-  name: vagrant
+  name: docker
+  use_sudo: false
 
 transport:
   name: sftp
@@ -13,11 +14,15 @@ provisioner:
   require_ruby_for_busser: true
 
 platforms:
-  - name: ubuntu-14.04
+  - name: ubuntu-16.04
 
 suites:
   - name: default
   - name: apache_server
+    #    provisioner:
+    #      name: ansible_playbook
+    #      playbook: main.yml
 
 verifier:
+    #  name: "kitchen-verifier-serverspec"
   ruby_bindir: '/usr/bin'

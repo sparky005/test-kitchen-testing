@@ -1,0 +1,10 @@
+---
+
+- name: update apt-cache
+  apt: update_cache=yes
+
+- name: install vim
+  apt: name=vim state=latest
+
+- name: install emacs
+  apt: name=emacs state=latest

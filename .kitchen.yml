@@ -17,6 +17,7 @@ platforms:
   - name: ubuntu-16.04
 
 suites:
+  - name: linux_common
   - name: apache_server
     #    provisioner:
     #      name: ansible_playbook
